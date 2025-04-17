@@ -1,0 +1,19 @@
+@keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 20px 5px rgba(59, 131, 246, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 30px 10px rgba(59, 131, 246, 0.8);
+    }
+  }
+  
+  .animate-glow {
+    animation: glow 2s infinite;
+    border-radius: 50%; /* Asegura que la imagen sea circular */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+  }
+
+  .animate-glow:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0 0 40px 15px rgba(59, 131, 246, 0.8); /* Cambia el brillo al pasar el mouse */
+  }

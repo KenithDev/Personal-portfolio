@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: linear-gradient(90deg, #111827 25%, #0C101B 50%, #000000 100%);
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(90deg, #111827 25%, #0C101B 50%, #000000 100%);
+    --foreground: #ededed;
+  }
+}
+/* Definición de las fuentes Poppins */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/Fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/Fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+.typing-cursor::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', 'Helvetica', sans-serif;
+}
