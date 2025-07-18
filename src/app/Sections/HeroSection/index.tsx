@@ -1,13 +1,13 @@
 "use client"
 // src/components/Hero.tsx
-import React from "react";7
+import React from "react";
 import { useRouter } from 'next/navigation'
 
 // Estilos
 import "./index.css";
 
 export default function Hero() {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <section className="mt-10 md:mt-20 flex items-center">
@@ -28,7 +28,7 @@ export default function Hero() {
             <button className="px-5 py-3 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transform transition duration-300 ease-in-out hover:scale-105" onClick={() => router.push('/About')}>
               View Projects
             </button>
-            <button className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105"> 
+            <button className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105 " onClick={() => router.push('/Sections/About')}> 
               About me 
             </button>
           </div>

@@ -1,10 +1,10 @@
-import Header from "./Header";
-import Hero from "./HeroSection";
+import Hero from "./Sections/HeroSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen" style={{ background: "var(--background)" }}>
+    <div className="min-h-screen" >
       <Hero />
+
     </div>
   );
 }

@@ -2,14 +2,14 @@ import React from "react";
 
 function About() {
   return (
-    <section className="flex justify-between items-center w-full h-screen">
-      <div className="mt-10 mb-5"> 
-        <h1>About Us</h1>
-        <p className="text-base sm:text-lg text-gray-600 text-center"> 
+    <section className="flex flex-col justify-center items-center px-4 gap-10 md:px-6 md:flex-row md:gap-30 lg:px-10">
+      <div className="w-full md:w-1/2 flex flex-col gap-5 items-center text-center md:text-left"> 
+        <h1 className="text-4xl font-bold ">About Us</h1>
+        <p className="text-lg sm:text-lg text-gray-600 text-center"> 
           We are a team of passionate developers and designers dedicated to creating exceptional digital experiences.
         </p>
       </div>
-      <div className="flex items-center ml-8 md:ml-5 xl:ml-20">
+      <div className="flex items-center">
         <img
           src="/Assets/KenithDev.svg"
           alt="KenithDev"
