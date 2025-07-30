@@ -25,10 +25,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="px-5 py-3 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transform transition duration-300 ease-in-out hover:scale-105" onClick={() => router.push('/About')}>
+            <button className="px-5 py-3 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transform transition duration-300 ease-in-out hover:scale-105" onClick={() => router.push('/Pages/Projects')}>
               View Projects
             </button>
-            <button className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105 " onClick={() => router.push('/Sections/About')}> 
+            <button className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105 " onClick={() => router.push('/Pages/About')}> 
               About me 
             </button>
           </div>
@@ -39,7 +39,7 @@ export default function Hero() {
           <img
             src="/Assets/KenithDev.svg"
             alt="KenithDev"
-            className="w-80 h-80 sm:w-60 sm:h-60 md:w-70 md:h-70 lg:w-100 lg:h-100 xl:w-130 xl:h-130 object-cover rounded-full border-8 border-[#3b83f63a] animate-glow" 
+            className="w-80 h-80 sm:w-60 sm:h-60 md:w-70 md:h-70 lg:w-100 lg:h-100 xl:w-130 xl:h-130 object-cover rounded-full animate-glow" 
           />
         </div>
       </div>

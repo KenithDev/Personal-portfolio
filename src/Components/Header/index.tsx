@@ -17,7 +17,7 @@ function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between px-5 py-4 sm:px-10 sm:py-8 xl:px-20 text-white mb-30">
+    <header className="flex items-center justify-between px-5 py-4 sm:px-10 sm:py-8 xl:px-20 text-white mb-10 md:mb-20">
       <div className="text-xl font-bold flex items-center gap-1 transition-transform duration-300 hover:scale-110">
         <a href="/">
           <span className="text-blue-500">&lt;</span>
