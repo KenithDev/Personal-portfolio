@@ -2,6 +2,7 @@
 // src/components/Hero.tsx
 import React from "react";
 import { useRouter } from 'next/navigation'
+import Image from "next/image";
 
 // Estilos
 import "./index.css";
@@ -10,7 +11,7 @@ export default function Hero() {
   const router = useRouter()
 
   return (
-    <section className="mt-10 md:mt-20 flex items-center">
+    <section className="p-10 md:mt-20 flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Texto */}
         <div className="flex flex-col justify-center gap-6 py-8 md:py-12">
@@ -35,12 +36,14 @@ export default function Hero() {
         </div>
 
         {/* Imagen */}
-        <div className="flex items-center justify-center ml-8 md:ml-5 xl:ml-20">
-          <img
-            src="/Assets/KenithDev.svg"
-            alt="KenithDev"
-            className="w-80 h-80 sm:w-60 sm:h-60 md:w-70 md:h-70 lg:w-100 lg:h-100 xl:w-130 xl:h-130 object-cover rounded-full animate-glow" 
-          />
+        <div className="flex items-center justify-center ml-8 md:ml-5 xl:ml-20 ">
+          <Image 
+  src="/Assets/KenithDev.svg" 
+  alt="KenithDev" 
+  width={320}
+  height={320}
+  className="w-80 h-80 sm:w-60 sm:h-60 md:w-70 md:h-70 lg:w-100 lg:h-100 xl:w-130 xl:h-130 object-cover rounded-full animate-glow"
+/>
         </div>
       </div>
     </section>
