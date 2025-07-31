@@ -7,12 +7,12 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 
 function Header() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  /* const [isDarkMode, setIsDarkMode] = useState(true); */
   const [language, setLanguage] = useState("ES");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  /*   const toggleTheme = () => {
+/*   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   }; */
 
@@ -65,10 +65,7 @@ function Header() {
   const menuItems = [
     { label: language === "ES" ? "INICIO" : "HOME", href: "/" },
     { label: language === "ES" ? "ACERCA" : "ABOUT", href: "/Pages/About" },
-    {
-      label: language === "ES" ? "PROYECTOS" : "PROJECTS",
-      href: "/Pages/Projects",
-    },
+    { label: language === "ES" ? "PROYECTOS" : "PROJECTS", href: "/Pages/Projects" },
   ];
 
   return (
@@ -114,12 +111,7 @@ function Header() {
               {isMenuOpen ? (
                 <X className="w-6 h-6 text-white" />
               ) : (
-                <Image
-                  src="/Assets/menu.gif"
-                  alt="Menu"
-                  width={24}
-                  height={24}
-                />
+                <Image  src="/Assets/menu.gif" alt="Menu" width={24} height={24} />
               )}
             </button>
 
@@ -142,6 +134,34 @@ function Header() {
                     {item.label}
                   </Link>
                 ))}
+
+                {/* Tema (comentado como en el original) */}
+                {/*
+                <button
+                  onClick={() => {
+                    toggleTheme();
+                    closeMenu();
+                  }}
+                  className="flex items-center gap-3 w-full px-6 py-3 text-white hover:text-blue-400 hover:bg-blue-500/10 transition-all duration-200 font-medium text-sm tracking-wide"
+                >
+                  <div className="relative w-4 h-4 overflow-hidden">
+                    <MoonStar
+                      className={`absolute left-0 w-4 h-4 transition-all duration-300 ${
+                        isDarkMode ? "top-0 opacity-100" : "top-6 opacity-0"
+                      }`}
+                    />
+                    <Sun
+                      className={`absolute left-0 w-4 h-4 text-yellow-400 transition-all duration-300 ${
+                        isDarkMode ? "top-6 opacity-0" : "top-0 opacity-100"
+                      }`}
+                    />
+                  </div>
+                  {isDarkMode 
+                    ? (language === "ES" ? "Modo Claro" : "Light Mode")
+                    : (language === "ES" ? "Modo Oscuro" : "Dark Mode")
+                  }
+                </button>
+                */}
               </div>
             </div>
           </div>
