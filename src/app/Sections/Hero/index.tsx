@@ -1,14 +1,14 @@
-"use client"
+"use client";
 // src/components/Hero.tsx
 import React from "react";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 // Estilos
 import "./index.css";
 
 export default function Hero() {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <section className="p-10 md:mt-20 flex items-center">
@@ -26,24 +26,30 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="px-5 py-3 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transform transition duration-300 ease-in-out hover:scale-105" onClick={() => router.push('/Pages/Projects')}>
+            <button
+              className="px-5 py-3 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transform transition duration-300 ease-in-out hover:scale-105"
+              onClick={() => router.push("/Pages/Projects")}
+            >
               View Projects
             </button>
-            <button className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105 " onClick={() => router.push('/Pages/About')}> 
-              About me 
+            <button
+              className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105 "
+              onClick={() => router.push("/Pages/About")}
+            >
+              About me
             </button>
           </div>
         </div>
 
         {/* Imagen */}
         <div className="flex items-center justify-center ml-8 md:ml-5 xl:ml-20 ">
-          <Image 
-  src="/Assets/KenithDev.svg" 
-  alt="KenithDev" 
-  width={320}
-  height={320}
-  className="w-80 h-80 sm:w-60 sm:h-60 md:w-70 md:h-70 lg:w-100 lg:h-100 xl:w-130 xl:h-130 object-cover rounded-full animate-glow"
-/>
+          <Image
+            src="/Assets/KenithDev.svg"
+            alt="KenithDev"
+            width={320}
+            height={320}
+            className="w-80 h-80 sm:w-60 sm:h-60 md:w-70 md:h-70 lg:w-100 lg:h-100 xl:w-130 xl:h-130 object-cover rounded-full animate-glow"
+          />
         </div>
       </div>
     </section>

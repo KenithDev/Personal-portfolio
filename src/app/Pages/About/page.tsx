@@ -5,6 +5,7 @@ import {
 } from "@mynaui/icons-react";
 import Link from "next/dist/client/link";
 import React from "react";
+import Image from "next/image";
 
 function About() {
   return (
@@ -53,9 +54,11 @@ function About() {
         </Link>
       </div>
       <div className="flex items-center order-first md:order-last justify-center w-full md:w-1/2">
-        <img
+        <Image
           src="/Assets/KenithDev.svg"
           alt="KenithDev"
+          width={320}
+          height={320}
           className="w-80 h-80 rounded-t-lg sm:w-60 sm:h-60 md:w-70 md:h-70 lg:w-100 lg:h-100 xl:w-130 xl:h-130 object-cover md:rounded-tl-3xl md:rounded-br-3xl shadow-xl shadow-blue-500/50 md:skew-y-6 transition-transform duration-500 ease-in-out hover:scale-105"
         />
       </div>

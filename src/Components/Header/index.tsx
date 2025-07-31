@@ -2,8 +2,9 @@
 // Header.tsx
 
 import React, { useState, useEffect, useRef } from "react";
-import { MoonStar, Sun, X } from "@mynaui/icons-react";
+import { X } from "@mynaui/icons-react";
 import Image from "next/image";
+import Link from "next/dist/client/link";
 
 function Header() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -71,11 +72,11 @@ function Header() {
     <>
       <header className="flex items-center justify-between px-5 py-4 sm:px-10 sm:py-8 xl:px-20 text-white mb-10 md:mb-20 relative z-40">
         <div className="text-xl font-bold flex items-center gap-1 transition-transform duration-300 hover:scale-110">
-          <a href="/">
+          <Link href="/">
             <span className="text-blue-500">&lt;</span>
             <span className="text-white font-bold font-poppins">KenithDev</span>
             <span className="text-blue-500">/&gt;</span>
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 md:gap-5 xl:gap-10">
@@ -124,14 +125,14 @@ function Header() {
             >
               <div className="py-2 min-w-[160px]">
                 {menuItems.map((item, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={item.href}
                     onClick={closeMenu}
                     className="block px-6 py-3 text-white hover:text-blue-400 hover:bg-blue-500/10 transition-all duration-200 font-medium text-sm tracking-wide"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
 
                 {/* Tema (comentado como en el original) */}
