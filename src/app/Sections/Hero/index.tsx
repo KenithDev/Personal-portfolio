@@ -16,7 +16,7 @@ export default function Hero() {
         {/* Texto */}
         <div className="flex flex-col justify-center gap-6 py-8 md:py-12">
           <h1 className="text-4xl xl:text-6xl font-bold text-center md:text-left">
-            Hi. I'm <br />
+            {"I'm a developer"}<br />
             <span className="text-blue-500">Kenith Guanilo</span>
           </h1>
 
@@ -28,13 +28,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               className="px-5 py-3 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transform transition duration-300 ease-in-out hover:scale-105"
-              onClick={() => router.push("/Pages/Projects")}
+              onClick={() => router.push('/Pages/Projects')}
             >
               View Projects
             </button>
             <button
               className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105 "
-              onClick={() => router.push("/Pages/About")}
+              onClick={() => router.push('/Pages/About')}
             >
               About me
             </button>

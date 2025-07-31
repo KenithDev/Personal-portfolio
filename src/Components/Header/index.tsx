@@ -12,9 +12,9 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const toggleTheme = () => {
+/*   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
-  };
+  }; */
 
   const changeLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === "ES" ? "EN" : "ES"));
