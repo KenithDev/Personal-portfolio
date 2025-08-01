@@ -2,7 +2,7 @@
 // Header.tsx
 
 import React, { useState, useEffect, useRef } from "react";
-import { X } from "@mynaui/icons-react";
+import { X,Terminal } from "@mynaui/icons-react";
 import Image from "next/image";
 import Link from "next/dist/client/link";
 
@@ -70,8 +70,8 @@ function Header() {
 
   return (
     <>
-      <header className="flex items-center justify-between px-5 py-4 sm:px-10 sm:py-8 xl:px-20 text-white mb-10 md:mb-20 relative z-40">
-        <div className="text-xl font-bold flex items-center gap-1 transition-transform duration-300 hover:scale-110">
+      <header className="flex items-center  justify-between px-5 py-4 gap-10 sm:px-10 sm:py-8 xl:px-20 text-white mb-10 md:mb-20 relative z-40">
+        <div className="text-xl font-bold flex items-center gap-1 transition-transform duration-300 hover:scale-110 md:text-2xl ">
           <Link href="/">
             <span className="text-blue-500">&lt;</span>
             <span className="text-white font-bold font-poppins">KenithDev</span>
@@ -86,7 +86,7 @@ function Header() {
           >
             {/* ES */}
             <span
-              className={`absolute left-0 w-full text-sm font-bold font-poppins transition-all duration-500 ${
+              className={`absolute left-0 w-full text-lg font-bold font-poppins transition-all duration-500 md:text-xl ${
                 language === "ES" ? "top-0 opacity-100" : "top-8 opacity-0"
               }`}
             >
@@ -94,7 +94,7 @@ function Header() {
             </span>
             {/* EN */}
             <span
-              className={`absolute left-0 w-full text-sm font-bold font-poppins transition-all duration-500 ${
+              className={`absolute left-0 w-full text-lg font-bold font-poppins transition-all duration-500 md:text-xl ${
                 language === "EN" ? "top-0 opacity-100" : "top-8 opacity-0"
               }`}
             >
@@ -103,7 +103,7 @@ function Header() {
           </button>
 
           {/* Botón del menú */}
-          <div className="relative" ref={menuRef}>
+          <div className="flex items-center relative" ref={menuRef}>
             <button
               onClick={toggleMenu}
               className="transition-transform duration-300 transform hover:scale-110 relative z-50"
@@ -111,7 +111,7 @@ function Header() {
               {isMenuOpen ? (
                 <X className="w-6 h-6 text-white" />
               ) : (
-                <Image  src="/Assets/menu.gif" alt="Menu" width={24} height={24} />
+                <Terminal className="w-8 h-8 text-white" />
               )}
             </button>
 
