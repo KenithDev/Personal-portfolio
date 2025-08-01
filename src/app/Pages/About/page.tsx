@@ -43,7 +43,7 @@ function About() {
 
         <Link
           className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-500 focus-visible:text-purple-500 font-semibold group/link text-base"
-          href="/Documents/KenithGuaniloResume.pdf"
+          href="/Documents/CV-KenithGuanilo.pdf"
           target="_blank"
           rel="noreferrer noopener"
         >

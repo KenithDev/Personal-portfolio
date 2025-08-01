@@ -108,7 +108,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </button>
 
             <h3 className="text-xl font-bold mb-4">{title}</h3>
-            <p className="text-sm mb-6">{description}</p>
+            <p className="text-sm mb-6 text-justify">{description}</p>
 
             {/* Galería de imágenes */}
             {allImages.length > 0 && (
