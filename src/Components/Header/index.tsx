@@ -3,7 +3,6 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { X,Terminal } from "@mynaui/icons-react";
-import Image from "next/image";
 import Link from "next/dist/client/link";
 
 function Header() {
