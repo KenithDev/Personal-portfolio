@@ -15,8 +15,9 @@ export default function Hero() {
     <section className="p-10 md:mt-20 flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center gap-6 py-8 md:py-12">
-          <h1 className="text-4xl xl:text-6xl font-bold text-center md:text-left whitespace-pre-line">
-            {t("title", { name: <span className="text-blue-500">Kenith Guanilo</span> as any })}
+          <h1 className="flex flex-col gap-2 text-4xl xl:text-6xl font-bold text-center md:text-left whitespace-pre-line">
+            {t("title")}
+            <span className="text-blue-500">{t("name")}</span>
           </h1>
 
           <p className="text-base sm:text-lg text-gray-600 text-center md:text-left">
