@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "../Components/Header";
+import Header from "@/Components/Header";
 import Aurora from "@/Components/Aurora";
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,14 +23,18 @@ export const metadata: Metadata = {
     icon: "/Assets/LogoDev.svg",
   },
 };
-
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params: {locale}
+}: {
   children: React.ReactNode;
-}>) {
+  params: {locale: string};
+}) {
+  const messages = await getMessages();
+
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen `}
       >
@@ -38,13 +44,15 @@ export default function RootLayout({
             blend={0.5}
             amplitude={1.0}
             speed={0.5}
-            
           />
         </div>
-        <div className="relative ">
-          <Header />
-          {children}
-        </div>
+        {/* Asegúrate de pasar el locale y los mensajes a NextIntlClientProvider */}
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            {children}
+          </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

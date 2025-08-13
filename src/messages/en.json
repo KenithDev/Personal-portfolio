@@ -1,0 +1,43 @@
+{
+  "Header": {
+    "brand": "KenithDev"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  },
+  "lang": {
+    "es": "ES",
+    "en": "EN"
+  },
+
+  "Hero": {
+    "title": "I'm a developer",
+    "subtitle": "Front-end Developer and UX/UI Designer creating intuitive and engaging digital experiences.",
+    "ctaPrimary": "View Projects",
+    "ctaSecondary": "About Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hi! I'm Kenith Guanilo, a front-end web developer from Peru, known on social media as kenithDev. I build modern, intuitive, and responsive interfaces, with a focus on details that enhance user experience. I am passionate about creating digital experiences that are not only functional but also visually appealing. With expertise in Front-end and UX/UI, I strive to design intuitive interfaces that improve user interaction.",
+    "Cv": "View Full Resume"
+  },
+  "Projects": {
+    "title": "Projects",
+    "items": {
+      "HSMCH": {
+        "title": "HSMCH",
+        "description": "HSMCH is a web-based management system developed for the Hermandad del Señor de los Milagros de Chancay. Its main purpose is to provide an efficient way to manage member records, track income and expenses, and generate reports and receipts. The system was built using a client-server architecture with Node.js and Express on the backend, and React with Redux on the frontend. HSMCH offers a clean and intuitive interface, ensuring smooth access to financial and administrative operations."
+      },
+      "SkillConnect": {
+        "title": "SkillConnect",
+        "description": "SkillConnect is an educational web platform developed during a hackathon, designed to connect students with mentors for skill development and career guidance. The main challenge was to create a website with four distinct user interface designs tailored to different age groups: Default, Kids, Young, and Adult. Based on the user's age registered in the backend, the platform dynamically displays the appropriate design. Additionally, SkillConnect offers personalized learning paths and scholarship opportunities to support users in their educational journey."
+      },
+      "StudyRoom": {
+        "title": "StudyRoom",
+        "description": "StudyRoom is a web application designed to facilitate the assignment, monitoring, and administration of study rooms, while enhancing the overall user experience. Built with WebSocket technology, the system ensures real-time synchronization across all connected devices each room displays a countdown timer, sends alerts when time is up, and shows availability status instantly to both users and administrators.Administrators have access to a control panel where they can view usage records, identify peak hours, and manage room availability. The platform also allows users to make reservations and receive notifications or recommendations via email, making the booking process seamless and efficient."
+      }
+    }
+  }
+}

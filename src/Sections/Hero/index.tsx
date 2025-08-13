@@ -1,47 +1,44 @@
 "use client";
-// src/components/Hero.tsx
 import React from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 import Image from "next/image";
-
-// Estilos
+import { useTranslations } from "next-intl";
+import { Locale } from "next-intl";
 import "./index.css";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   const router = useRouter();
+  const { locale } = useParams() as { locale: Locale };
 
   return (
     <section className="p-10 md:mt-20 flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Texto */}
         <div className="flex flex-col justify-center gap-6 py-8 md:py-12">
-          <h1 className="text-4xl xl:text-6xl font-bold text-center md:text-left">
-            {"I'm a developer"}<br />
-            <span className="text-blue-500">Kenith Guanilo</span>
+          <h1 className="text-4xl xl:text-6xl font-bold text-center md:text-left whitespace-pre-line">
+            {t("title", { name: <span className="text-blue-500">Kenith Guanilo</span> as any })}
           </h1>
 
           <p className="text-base sm:text-lg text-gray-600 text-center md:text-left">
-            Front-end Web Developer & UX/UI Designer creating intuitive and
-            engaging digital experiences.
+            {t("subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               className="px-5 py-3 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transform transition duration-300 ease-in-out hover:scale-105"
-              onClick={() => router.push('/Pages/Projects')}
+              onClick={() => router.push(`/${locale}/Pages/Projects`)}
             >
-              View Projects
+              {t("ctaPrimary")}
             </button>
             <button
               className="px-5 py-3 text-sm font-medium text-white rounded-full border-2 border-blue-500 transform transition duration-300 ease-in-out hover:scale-105 "
-              onClick={() => router.push('/Pages/About')}
+              onClick={() => router.push(`/${locale}/Pages/About`)}
             >
-              About me
+              {t("ctaSecondary")}
             </button>
           </div>
         </div>
 
-        {/* Imagen */}
         <div className="flex items-center justify-center ml-8 md:ml-5 xl:ml-20 ">
           <Image
             src="/Assets/KenithDev.svg"

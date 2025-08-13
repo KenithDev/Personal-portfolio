@@ -6,21 +6,16 @@ import {
 import Link from "next/dist/client/link";
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function About() {
+  const t = useTranslations("about");
   return (
     <section className="flex flex-col justify-center items-center px-6 gap-10 md:px-10 lg:px-30 md:flex-row md:gap-10">
       <div className="w-full md:w-1/2 flex flex-col gap-6 items-start text-center md:text-left">
-        <h1 className="text-6xl font-bold ">About</h1>
+        <h1 className="text-6xl font-bold ">{t("title")}</h1>
         <p className="text-lg sm:text-lg text-gray-300 text-justify">
-          Hi! I’m Kenith Guanilo, a front-end web developer from Peru, known on
-          social media as kenithDev. I build modern, intuitive, and responsive
-          interfaces, with a focus on details that enhance user experience. I’m
-          passionate about turning ideas into functional digital products. I’m
-          curious, self-taught, and always exploring new technologies. Sports
-          have taught me discipline and teamwork values I bring to every
-          project. I’m focused on growing and working with people who appreciate
-          good design and clean code.
+          {t("description")}
         </p>
         <div className="flex flex-row gap-2 ">
           <Link
@@ -47,7 +42,7 @@ function About() {
           target="_blank"
           rel="noreferrer noopener"
         >
-          View Full Resume{" "}
+          {t("Cv")}
           <span className="inline-block ml-1">
             <ArrowLongUpRight size={12} />
           </span>

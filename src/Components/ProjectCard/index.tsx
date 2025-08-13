@@ -59,13 +59,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           className="rounded-t-lg object-cover w-full h-auto cursor-pointer"
           onClick={() => openImageViewer(0)}
         />
-        <div className="p-4 px-4">
+        <div className="p-4 px-4 ">
           <h2 className="text-xl font-extrabold mb-2">{title}</h2>
           <div className="flex flex-wrap gap-2 mb-8">
             {techs.map((tech) => (
               <span
                 key={tech}
-                className="text-xs border border-blue-500 text-white rounded-full px-3 py-0.5"
+                className="text-xs border border-blue-500 text-white rounded-full px-3 py-0.5  transition shadow-md hover:shadow-blue-600"
               >
                 {tech}
               </span>
