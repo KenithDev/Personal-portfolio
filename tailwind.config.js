@@ -5,8 +5,8 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'], 
+     fontFamily: {
+        sans: ['Sans_Code', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },

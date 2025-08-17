@@ -70,6 +70,20 @@ function Projects() {
             "/StudyRoom/HistorialRegistro.svg",
           ]}
         />
+        <ProjectCard
+          title={t("items.KodoTakai.title")}
+          techs={["Next.js", "Tailwind CSS", "TypeScript", "React"]}
+          imageSrc="/KodoTakai/KodoTakai-Home.png"
+          gallery={[
+            "/KodoTakai/KodoTakai-Home.png",
+            "/KodoTakai/KodoTakai-Contador.png",
+            "/KodoTakai/KodoTakai-Planes.png",
+            "/KodoTakai/KodoTakai-Footer.png",
+          ]}
+          description={t("items.KodoTakai.description")}
+          githubUrl="https://github.com/KenithDev/KodoTakai"
+          liveUrl="https://kodo-takai.vercel.app/"
+        />
       </div>
     </div>
   );

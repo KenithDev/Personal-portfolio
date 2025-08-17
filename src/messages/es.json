@@ -38,6 +38,10 @@
       "StudyRoom": {
         "title": "StudyRoom",
         "description": "StudyRoom es una aplicación web diseñada para facilitar la asignación, monitoreo y administración de salas de estudio, al tiempo que mejora la experiencia general del usuario. Construido con tecnología WebSocket, el sistema garantiza la sincronización en tiempo real en todos los dispositivos conectados. Cada sala muestra un temporizador de cuenta regresiva, envía alertas cuando el tiempo se agota y muestra el estado de disponibilidad instantáneamente tanto a los usuarios como a los administradores. Los administradores tienen acceso a un panel de control donde pueden ver registros de uso, identificar horas pico y gestionar la disponibilidad de las salas. La plataforma también permite a los usuarios hacer reservas y recibir notificaciones o recomendaciones por correo electrónico, lo que hace que el proceso de reserva sea fluido y eficiente."
+      },
+      "KodoTakai":{
+        "title": "KodoTakai",
+        "description": "KodoTakai es la plataforma oficial para promocionar y proporcionar toda la información sobre el emocionante Concurso de Programación KodoTakai, que se llevará a cabo en Colombia. Diseñada para entusiastas de la programación y equipos de desarrolladores, KodoTakai ofrece un espacio donde los participantes pueden obtener detalles clave sobre el evento, incluyendo horarios, reglas, categorías y premios. Además, la plataforma facilita la inscripción, el seguimiento de la competencia y la interacción entre los concursantes. Con una interfaz amigable y fácil de navegar, KodoTakai se asegura de que todos los participantes tengan acceso a la información necesaria para aprovechar al máximo esta experiencia única en el mundo de la programación."
       }
     }
   }

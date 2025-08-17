@@ -47,35 +47,35 @@ function Header() {
 
   return (
     <>
-      <header className="flex items-center justify-between px-5 py-4 gap-10 sm:px-10 sm:py-8 xl:px-20 text-white mb-10 relative z-40">
+      <header className="flex items-center  justify-between px-5 py-4 gap-10 sm:px-10 sm:py-8 xl:px-20 text-white relative z-40">
         <div className="text-xl font-bold flex items-center gap-1 transition-transform duration-300 hover:scale-110 md:text-2xl ">
           <Link href={`/`}>
             <span className="text-blue-500">&lt;</span>
-            <span className="text-white font-bold font-poppins">
-              {tHeader("brand")}
-            </span>
+            <span className="text-white font-bold ">{tHeader("brand")}</span>
             <span className="text-blue-500">/&gt;</span>
           </Link>
         </div>
 
         <div className="flex items-center gap-2 md:gap-5 xl:gap-10">
           {/* Switch ES/EN */}
-          <div className="relative w-10 h-6 overflow-hidden transition-transform duration-300 transform hover:scale-110">
+          <div className="relative w-10 h-6 overflow-hidden font-Sans_Code text-lg transition-transform duration-300 transform hover:scale-110">
             <button
               onClick={() => switchTo(locale === "es" ? "en" : "es")}
-              className="relative w-full h-full"
+              className="relative w-full h-full  "
             >
               <span
-                className={`absolute left-0 w-full text-lg font-bold font-poppins transition-all duration-500 ${
-                  locale === "es" ? "top-0 opacity-100" : "top-8 opacity-0"
-                }`}
+                className={`absolute left-0 w-full 
+                   transition-all duration-500 ${
+                     locale === "es" ? "top-0 opacity-100" : "top-8 opacity-0"
+                   }`}
               >
                 {tLang("es")}
               </span>
               <span
-                className={`absolute left-0 w-full text-lg font-bold font-poppins transition-all duration-500 ${
-                  locale === "en" ? "top-0 opacity-100" : "top-8 opacity-0"
-                }`}
+                className={`absolute left-0 w-full 
+                  transition-all duration-500 ${
+                    locale === "en" ? "top-0 opacity-100" : "top-8 opacity-0"
+                  }`}
               >
                 {tLang("en")}
               </span>
@@ -83,7 +83,7 @@ function Header() {
           </div>
 
           {/* Menú */}
-          <div className="flex items-center relative" ref={menuRef}>
+          <div className="flex relative" ref={menuRef}>
             <button
               onClick={() => setIsMenuOpen((v) => !v)}
               className="transition-transform duration-300 transform hover:scale-110 relative z-50"
@@ -96,7 +96,7 @@ function Header() {
             </button>
 
             <div
-              className={`absolute top-12 right-0 bg-[#0f0c1d]/95 backdrop-blur-md border border-blue-500/50 rounded-xl shadow-2xl transition-all duration-300 origin-top-right ${
+              className={`absolute top-10 right-0 bg-[#0f0c1d]/95 backdrop-blur-md border border-blue-500/50 rounded-xl shadow-2xl transition-all duration-300 origin-top-right ${
                 isMenuOpen
                   ? "opacity-100 scale-100 visible"
                   : "opacity-0 scale-95 invisible"
@@ -117,6 +117,7 @@ function Header() {
             </div>
           </div>
         </div>
+        
       </header>
 
       {isMenuOpen && (

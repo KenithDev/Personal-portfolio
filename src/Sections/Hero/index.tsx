@@ -12,7 +12,7 @@ export default function Hero() {
   const { locale } = useParams() as { locale: Locale };
 
   return (
-    <section className="p-10 md:mt-20 flex items-center">
+    <section className="p-10 flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center gap-6 py-8 md:py-12">
           <h1 className="flex flex-col gap-2 text-4xl xl:text-6xl font-bold text-center md:text-left whitespace-pre-line">
