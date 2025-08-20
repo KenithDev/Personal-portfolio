@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <>
-      <div className="relative bg-black/30 backdrop-blur-sm rounded-xl p-1 border border-blue-500 text-white shadow-md hover:shadow-blue-600 transition duration-300 w-full max-w-xs sm:max-w-sm md:max-w-md">
+      <div className="relative bg-black/30 backdrop-blur-sm rounded-xl p-1 border border-blue-500 text-white shadow-md hover:shadow-blue-600 transition duration-300 w-full max-w-xs sm:max-w-md lg:max-w-lg">
         <Image
           src={imageSrc}
           alt={title}
@@ -59,13 +59,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           className="rounded-t-lg object-cover w-full h-auto cursor-pointer"
           onClick={() => openImageViewer(0)}
         />
-        <div className="p-4 px-4 ">
+        <div className="p-4 px-4">
           <h2 className="text-xl font-extrabold mb-2">{title}</h2>
           <div className="flex flex-wrap gap-2 mb-8">
             {techs.map((tech) => (
               <span
                 key={tech}
-                className="text-xs border border-blue-500 text-white rounded-full px-3 py-0.5  transition shadow-md hover:shadow-blue-600"
+                className="text-xs border border-blue-500 text-white rounded-full px-3 py-0.5 transition shadow-md hover:shadow-blue-600"
               >
                 {tech}
               </span>
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
             <button
               onClick={() => setOpen(true)}
-              className="text-sm bg-transparent border border-blue-500 px-6 py-1 rounded-full hover:bg-blue-600 transition"
+              className="text-sm bg-transparent border border-blue-500 px-6 py-1 rounded-full hover:bg-blue-600 transition w-auto h-auto"
             >
               Ver más
             </button>
@@ -154,7 +154,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {/* Visor de Imágenes en Pantalla Completa */}
       {imageViewerOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-[60] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
           onKeyDown={handleKeyDown}
           tabIndex={0}
@@ -213,8 +213,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
                   className={`relative w-16 h-12 flex-shrink-0 rounded border-2 overflow-hidden transition ${
-                    index === currentImageIndex 
-                      ? 'border-blue-500' 
+                    index === currentImageIndex
+                      ? 'border-blue-500'
                       : 'border-white/30 hover:border-white/60'
                   }`}
                 >

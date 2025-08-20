@@ -13,8 +13,9 @@
   },
 
   "Hero": {
-    "title": "I'm a developer",
+    "title": "Hi, my name is",
     "name": "Kenith Guanilo",
+    "role": " web developer",
     "subtitle": "Front-end Developer and UX/UI Designer creating intuitive and engaging digital experiences.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "About Me"
@@ -42,6 +43,10 @@
       "KodoTakai": {
         "title": "KodoTakai",
         "description": "KodoTakai is the official platform to promote and provide all the information about the exciting KodoTakai Programming Contest, taking place in Colombia. Designed for programming enthusiasts and development teams, KodoTakai offers a space where participants can find key event details, including schedules, rules, categories, and prizes. The platform also facilitates registration, event tracking, and interaction among contestants. With a user-friendly and easy-to-navigate interface, KodoTakai ensures that all participants have access to the essential information needed to make the most of this unique programming experience."
+      },
+      "PedroDev | Portfolio website": {
+        "title": "PedroDev | Portfolio website",
+        "description": "Pedro's website is an online portfolio showcasing his projects, skills, and experience in web development. Designed with a focus on usability and aesthetics, the site allows visitors to explore Pedro's work intuitively. With sections dedicated to featured projects, client testimonials, and a blog on technology trends, Pedro's portfolio not only displays his expertise but also provides value to visitors through informative and relevant content."
       }
     }
   }

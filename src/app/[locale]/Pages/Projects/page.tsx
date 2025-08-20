@@ -6,7 +6,7 @@ function Projects() {
   const t = useTranslations("Projects");
   return (
     <div className="flex flex-col p-10 items-center justify-center ">
-      <h1 className="text-4xl font-bold">{t("title")}</h1>
+      <h1 className="text-white text-4xl font-bold">{t("title")}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         <ProjectCard
           title={t("items.HSMCH.title")}
@@ -59,7 +59,7 @@ function Projects() {
         />
         <ProjectCard
           title={t("items.StudyRoom.title")}
-          techs={["Java", "WebSocket", "MySQL", "NetBeans"]}
+          techs={["Java", "WebSocket", "MySQL", "NetBeans","jdk 14","PhpMyAdmin"]}
           imageSrc="/StudyRoom/StudyRoom.svg"
           description={t("items.StudyRoom.description")}
           githubUrl="https://github.com/KenithDev/Biblioteca-UCV"
@@ -83,6 +83,20 @@ function Projects() {
           description={t("items.KodoTakai.description")}
           githubUrl="https://github.com/KenithDev/KodoTakai"
           liveUrl="https://kodo-takai.vercel.app/"
+        />
+        <ProjectCard
+          title={t("items.PedroDev | Portfolio website.title")}
+          techs={["Next.js", "Tailwind CSS", "TypeScript", "React"]}
+          imageSrc="/PedroDev/PedroDev-Home.png"
+          gallery={[
+            "/PedroDev/PedroDev-Professional Development.png",
+            "/PedroDev/PedroDev-Services.png",
+            "/PedroDev/PedroDev-Projects.png",
+            "/PedroDev/PedroDev-Professional Experience.png",
+          ]}
+          description={t("items.PedroDev | Portfolio website.description")}
+          githubUrl="https://github.com/KenithDev/Web-portfolio"
+          liveUrl="https://portfolio-orcin-psi-23.vercel.app/"
         />
       </div>
     </div>

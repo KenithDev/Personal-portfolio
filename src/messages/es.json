@@ -13,8 +13,9 @@
     },
 
     "Hero": {
-        "title": "Soy desarrollador",
+        "title":"Hola, soy",
         "name": "Kenith Guanilo",
+        "role": "Desarrollador Web",
         "subtitle": "Desarrollador Front-end y Diseñador UX/UI creando experiencias digitales intuitivas y atractivas.",
         "ctaPrimary": "Ver Proyectos",
         "ctaSecondary": "Sobre mí"
@@ -42,6 +43,10 @@
       "KodoTakai":{
         "title": "KodoTakai",
         "description": "KodoTakai es la plataforma oficial para promocionar y proporcionar toda la información sobre el emocionante Concurso de Programación KodoTakai, que se llevará a cabo en Colombia. Diseñada para entusiastas de la programación y equipos de desarrolladores, KodoTakai ofrece un espacio donde los participantes pueden obtener detalles clave sobre el evento, incluyendo horarios, reglas, categorías y premios. Además, la plataforma facilita la inscripción, el seguimiento de la competencia y la interacción entre los concursantes. Con una interfaz amigable y fácil de navegar, KodoTakai se asegura de que todos los participantes tengan acceso a la información necesaria para aprovechar al máximo esta experiencia única en el mundo de la programación."
+      },
+      "Pedro | Portfolio website": {
+        "title": "PedroDev | Portfolio website",
+        "description": "El sitio web de Pedro es un portafolio en línea que muestra sus proyectos, habilidades y experiencia en desarrollo web. Diseñado con un enfoque en la usabilidad y la estética, el sitio permite a los visitantes explorar el trabajo de Pedro de manera intuitiva. Con secciones dedicadas a proyectos destacados, testimonios de clientes y un blog sobre tendencias en tecnología, el portafolio de Pedro no solo exhibe su experiencia, sino que también proporciona valor a los visitantes a través de contenido informativo y relevante."
       }
     }
   }
