@@ -8,7 +8,6 @@ import { Link } from "@/i18n/navigation";
 function Header() {
   const tHeader = useTranslations("Header");
   const tNav = useTranslations("nav");
-  const tLang = useTranslations("lang");
   const router = useRouter();
   const pathname = usePathname();
 
@@ -151,7 +150,7 @@ function Header() {
                     }}
                   >
                     <span className="text-xs font-bold text-gray-800 tracking-wide">
-                      {locale.toUpperCase()}
+                      {locale === "es" ? "ES" : "EN"}
                     </span>
                   </div>
                 </button>
