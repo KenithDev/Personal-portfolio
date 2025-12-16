@@ -13,7 +13,7 @@ function About() {
   return (
     <section className="flex flex-col justify-center items-center px-6 gap-10 py-15 md:px-10 lg:px-30 md:flex-row md:gap-10">
       <div className="w-full md:w-1/2 flex flex-col gap-6 items-start text-center md:text-left">
-        <h1 className="text-6xl font-bold ">{t("title")}</h1>
+        <h1 className="text-6xl font-bold text-white">{t("title")}</h1>
         <p className="text-lg sm:text-lg text-gray-300 text-justify">
           {t("description")}
         </p>
