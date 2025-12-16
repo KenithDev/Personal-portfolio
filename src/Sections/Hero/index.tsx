@@ -15,13 +15,13 @@ export default function Hero() {
     <section className="p-10 flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center gap-6 py-8 md:py-12">
-          <h1 className="flex flex-col gap-2 text-4xl xl:text-5xl font-bold text-center md:text-left whitespace-pre-line">
+          <h1 className="flex flex-col gap-2 text-4xl text-white xl:text-5xl font-bold text-center md:text-left whitespace-pre-line">
             {t("title")}
             <span className="text-blue-500">{t("name")}</span>
             {t("role")}
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-600 text-center md:text-left">
+          <p className="text-base sm:text-lg text-white text-center md:text-left">
             {t("subtitle")}
           </p>
 
