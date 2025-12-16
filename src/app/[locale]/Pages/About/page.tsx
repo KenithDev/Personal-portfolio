@@ -22,7 +22,7 @@ function About() {
             href="https://github.com/kenithDev"
             target="_blank"
             rel="noreferrer noopener"
-            className="hover:text-blue-500 transition-colors duration-300"
+            className="text-white hover:text-blue-500 transition-colors duration-300"
           >
             <BrandGithub size={30} />
           </Link>{" "}
@@ -30,7 +30,7 @@ function About() {
             href="https://www.linkedin.com/in/kenith-guanilo-pizarro-1147ab2ab/"
             target="_blank"
             rel="noreferrer noopener"
-            className="hover:text-blue-500 transition-colors duration-300"
+            className="text-white hover:text-blue-500 transition-colors duration-300"
           >
             <BrandLinkedin size={30} />
           </Link>
