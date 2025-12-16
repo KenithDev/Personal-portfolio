@@ -21,7 +21,7 @@ export default function Hero() {
             {t("role")}
           </h1>
 
-          <p className="text-base sm:text-lg text-white text-center md:text-left">
+          <p className="text-base sm:text-lg text-gray-600 text-center md:text-left">
             {t("subtitle")}
           </p>
 
